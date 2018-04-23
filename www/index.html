@@ -13,6 +13,16 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/kitchen-sink.css">
     <link rel="icon" href="img/icon.png">
+    <script type="text/javascript" >
+    
+					document.addEventListener("deviceready", onDeviceReady, false);
+					function onDeviceReady() 
+					{
+						StatusBar.overlaysWebView(false);
+						StatusBar.backgroundColorByHexString("#2196f3");
+						StatusBar.styleLightContent();
+					}
+	</script>
   </head>
   <body ng-controller="RootCtrl"  ng-cloak >
     <div class="statusbar-overlay"></div>
